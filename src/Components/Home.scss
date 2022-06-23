@@ -1,0 +1,74 @@
+.Home {
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-height: 93vh;
+    overflow: hidden;
+
+    .descriptionAndPhoto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media only screen and (max-width: 700px)  {
+            flex-flow: column-reverse;
+            align-items: center;
+        }
+
+        .Image {
+            height: 100%;
+            width: 100%;
+            vertical-align: middle;
+
+            .description {
+                position: absolute;
+                top:  33%;
+                left: 58%;
+
+                justify-content: center;
+                color: rgb(0, 0, 0);
+
+                white-space: nowrap;
+                font-size: 30px;
+                font-weight: bold;
+
+                a {
+                    border: 5px solid black;
+                    -webkit-text-stroke: 2px black;
+                    font-size: 50px;
+                    font-weight: normal;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    font-weight: bold;
+                }
+            }
+
+            .fadeInTop {
+                animation: fadeInTop 3s both;
+            }
+
+            @keyframes fadeInTop{
+                0%{
+                    opacity: 0;
+                    transform: translateY(-25px);
+                }
+                100%{
+                    opacity: 1;
+                    transform:translateY(0);
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

@@ -1,22 +1,19 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
+
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './Components/NavBar';
+import Home from './Components/Home'
+
 
 function App() {
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <div className="App">
+      <NavBar showMenu={() => setShowMenu(!showMenu)} menu={showMenu} />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Home/>
       </header>
     </div>
   );
