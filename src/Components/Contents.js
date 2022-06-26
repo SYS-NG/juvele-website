@@ -6,10 +6,7 @@ export const mouseDescriptions = [
     'speed',
     'comfort',
     'percision',
-    'quality',
-    'length',
-    'girth',
-    'pleasure'];
+    'quality'];
 
 export const profiles = [
     {

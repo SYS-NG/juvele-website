@@ -7,12 +7,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-//import './fonts/chillax/Chillax-Bold.ttf';
-//import './fonts/chillax/Chillax-Regular.ttf';
-//import './fonts/chillax/Chillax-Variable.ttf';
-import './fonts/chillax.css'
-
-
+import './Components/fonts/chillax.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

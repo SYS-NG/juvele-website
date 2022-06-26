@@ -21,7 +21,7 @@
     }
 
     .Icon {
-        margin-left: 60px;
+        margin-left:3vw;
         flex: auto;
         text-align: left;
 
@@ -33,7 +33,7 @@
     }
 
     .Options {
-        margin-right: 60px;
+        margin-right: 3vw;
 
         .compact {
             display: none;
@@ -70,7 +70,7 @@
             }
         }
 
-        @media only screen and (max-width: 830px) {
+        @media only screen and (max-width: 700px) {
             .compact {
                 display: flex;
             }
