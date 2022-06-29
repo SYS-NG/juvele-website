@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.scss";
 import MousePhoto from "./Images/C3D_render.JPG";
 import Typed from "react-typed";
-import { mouseDescriptions } from "./Contents";
+import { mouseDescriptions } from "./Assets";
 import { Row, Container } from 'react-bootstrap'
 import Button from "./Button"
 import { ButtonThemes, ButtonTypes, ButtonSizes } from "./buttonTypes";

@@ -1,15 +1,15 @@
 import React from "react";
-import "./Contents.scss";
-import { contents } from "./Assets";
-import ContentCard from "./ContentCard";
+import "./Profiles.scss";
+import { profiles } from "./Assets";
+import ProfileCard from "./ProfileCard";
 import { Row } from 'react-bootstrap'
 
 const Contents = () => {
 	return (
-		<Row classname="Contents" id="contents">
-			{contents.map((content) => (
-				<ContentCard
-					logo={content.image}
+		<Row classname="Profiles" id="profiles">
+			{profiles.map((content) => (
+				<ProfileCard
+                    headshot={content.photo}
 					name={content.name}
 					description={content.description}
 					skills={content.skills}

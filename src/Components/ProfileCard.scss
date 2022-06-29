@@ -1,0 +1,76 @@
+.ProfileCard {
+    margin: 0;
+    padding: 30px 70px;
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+    text-align: left;
+	width: 50%;
+	background-color: #53585b;
+	height: auto;
+	overflow: hidden;
+	background-size: cover;
+
+	@media only screen and (max-width: 700px) {
+		width: 100%;
+	}
+
+    .intro {
+        display: flex;
+	    flex-direction: row;
+        align-items: center;
+
+        .profileImage {
+            width: auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-blend-mode: multiply;
+            transition: background-color 0.3s;
+
+            img {
+                object-fit: cover;
+                width:150px;
+                height:150px;
+                border-radius: 10%;
+            }
+
+            &:hover {
+                background-color: transparent;
+                transition: background-color 0.3s;
+            }
+        }
+
+        .profileIntro {
+
+        }
+    }
+
+
+
+	.projectDescription {
+		width:  100%;
+        min-height: 250px;
+		position: static;
+		flex-direction: column;
+		display: flex;
+        padding: 0 30px;
+
+        h2 {
+            font-size: 25px;
+        }
+
+		p {
+			font-size: 20px;
+            white-space: pre-wrap;
+		}
+
+        @media only screen and (max-width: 700px) {
+            h2 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+	}
+}
