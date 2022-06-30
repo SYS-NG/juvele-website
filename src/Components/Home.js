@@ -28,7 +28,7 @@ const Home = () => {
                         <Button
                             size={ButtonSizes.LARGE}
                             label="LEARN MORE"
-                            onClickHandler={() => window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'}
+                            onClickHandler={() => {window.location.href='#contents'}}
                             type={ButtonTypes.SECONDARY}
                             theme={ButtonThemes.LIGHT}
                         />

@@ -6,7 +6,7 @@ import { Row } from 'react-bootstrap'
 
 const Contents = () => {
 	return (
-		<Row classname="Contents" id="contents">
+		<Row className="Contents" id="contents">
 			{contents.map((content) => (
 				<ContentCard
 					logo={content.image}

@@ -6,7 +6,7 @@ import { Row } from 'react-bootstrap'
 
 const Contents = () => {
 	return (
-		<Row classname="Profiles" id="profiles">
+		<Row className="Profiles" id="profiles">
 			{profiles.map((content) => (
 				<ProfileCard
                     headshot={content.photo}
