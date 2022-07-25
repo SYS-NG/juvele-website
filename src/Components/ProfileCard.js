@@ -1,24 +1,39 @@
 import React from "react";
 import "./ProfileCard.scss";
-import { Row, Col } from 'react-bootstrap'
+import { Col } from 'react-bootstrap'
+import { githubLogo, linkedinLogo, emailLogo } from "./Assets";
 
 const ProjectCard = (props) => {
 
 	return (
-        <div className="ProfileCard">
-            <Row className="intro">
-                <div className="profileImage col-xl-6 col-lg-6 col-md-6">
+        <Col className="ProfileCard">
+            <div className="intro">
+                <div className="profileImage">
                     <img src={props.headshot} alt=""/>
                 </div>
-                <div className="profileIntro col-xl-6 col-lg-6 col-md-6">
-                    <p> {props.name} </p>
+                <div className="details">
+
+                    <h4> {props.name} </h4>
+                    <p> {props.position} </p>
+                    <p> {props.profession} </p>
+
+                    <div className="contactLinks">
+                        <a href={props.linkedIn}>
+                            {linkedinLogo()}
+                        </a>
+                        <a href={props.github} target="_blank" rel="noreferrer">
+                            {githubLogo()}
+                        </a>
+                        <a href={props.email} target="_blank" rel="noreferrer">
+                            {emailLogo()}
+                        </a>
+                    </div>
                 </div>
-            </Row>
-            <div className="projectDescription">
-                <h2> {props.name} </h2>
+            </div>
+            <div className="description">
                 <p>{props.description} </p>
             </div>
-        </div>
+        </Col>
 	);
 };
 

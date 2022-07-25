@@ -17,17 +17,17 @@ const NavBar = (props) => {
 
 	const menuOptions = [
 		{
-			ref: "#about", // Mouse page
+			ref: "#CD3", // Mouse page
 			name: "CD3",
             target: "_self"
 		},
 		{
-			ref: "#projects", // About us
+			ref: "#about", // About us
 			name: "About",
             target: "_self"
 		},
 		{
-			ref: "#projects", // Open box on website
+			ref: "#cart", // Open box on website
 			name: "Cart",
             target: "_self"
 		},

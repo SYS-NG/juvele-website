@@ -1,6 +1,6 @@
 .ProfileCard {
     margin: 0;
-    padding: 30px 70px;
+    padding: 30px 40px;
 	display: flex;
 	flex-direction: column;
 	color: #fff;
@@ -11,16 +11,17 @@
 	overflow: hidden;
 	background-size: cover;
 
-	@media only screen and (max-width: 700px) {
+	@media only screen and (max-width: 900px) {
 		width: 100%;
 	}
 
     .intro {
+        padding: 0;
         display: flex;
 	    flex-direction: row;
-        align-items: center;
 
         .profileImage {
+            padding: 0;
             width: auto;
             background-size: cover;
             background-repeat: no-repeat;
@@ -40,26 +41,58 @@
             }
         }
 
-        .profileIntro {
+        .details {
+            padding: 0;
+            padding-left: 20px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
+            h4 {
+                margin: 0;
+                font-size: 25px;
+            }
+
+            p {
+                margin: 0;
+                font-size: 18px;
+            }
+
+            @media only screen and (max-width: 900px) {
+                h4 {
+                    font-size: larger;
+                }
+                p {
+                    font-size: large;
+                }
+            }
+
+            .contactLinks {
+                margin: 0;
+                display: flex;
+                flex-direction: col;
+
+                a {
+                    margin-right: 11px;
+                }
+            }
         }
     }
 
-
-
-	.projectDescription {
+	.description {
 		width:  100%;
         min-height: 250px;
 		position: static;
 		flex-direction: column;
 		display: flex;
-        padding: 0 30px;
 
         h2 {
             font-size: 25px;
         }
 
 		p {
+            margin: 0;
 			font-size: 20px;
             white-space: pre-wrap;
 		}

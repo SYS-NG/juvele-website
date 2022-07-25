@@ -11,7 +11,11 @@ const Contents = () => {
 				<ProfileCard
                     headshot={content.photo}
 					name={content.name}
+                    position={content.position}
+                    profession={content.profession}
+                    linkedIn={content.linkedIn}
 					description={content.description}
+                    email={content.email}
 					skills={content.skills}
 					github={content.github}
 					devpost={content.devpost}
