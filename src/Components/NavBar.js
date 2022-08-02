@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./NavBar.scss";
 import { Squash as Hamburger } from "hamburger-react";
+import { closeContactForm } from "./ContactForm";
 
 const openCart = () => {
     var cart = document.getElementById("cart");
@@ -27,6 +28,7 @@ const NavBar = (props) => {
 			setNavBar(false);
 		}
 	};
+    window.addEventListener("scroll", changeNavBar);
 
     const toggleCart = () => {
         if (showCart) {
@@ -37,7 +39,16 @@ const NavBar = (props) => {
         setShowCart(!showCart);
     };
 
-	window.addEventListener("scroll", changeNavBar);
+    const homeTrigger = () => {
+        closeCart();
+        setShowCart(false);
+        closeContactForm();
+    }
+
+    const openContactForm = () => {
+        var contact = document.getElementById("contactPage");
+        contact.style.display = "flex";
+    }
 
 	const menuOptions = [
 		{
@@ -50,18 +61,13 @@ const NavBar = (props) => {
 			name: "About",
             target: "_self"
 		},
-		{
-			ref: "#contact", // Contact Part
-			name: "Contact",
-            target: "_self"
-		},
 	];
 
 	return (
 		<>
 			<div className={navBar ? "Navigation scroll" : "Navigation"}>
 				<div className="Icon">
-					<a href="#home"> Juvele </a>
+					<a href="#home" onClick={homeTrigger}> Juvele </a>
 				</div>
 				<div className="Options">
                     <div className="compact">
@@ -73,7 +79,8 @@ const NavBar = (props) => {
                     {menuOptions.map((option) => (
                         <a href={option.ref} target={option.target}>{option.name}</a>
                     ))}
-                        <a href="#cart" target="_self" onClick={toggleCart}>Cart (0)</a>
+                        <a href="javascript:void(0);" target="_self" onClick={openContactForm}>Contact</a>
+                        <a href="javascript:void(0);" target="_self" onClick={toggleCart}>Cart (0)</a>
 				</div>
 			</div>
 		</>
