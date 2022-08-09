@@ -5,12 +5,12 @@
 
     --color-primary-light: #313639;
     --color-secondary-light: #313639;
-    --color-disabled-light: --color-black;
+    --color-disabled-light: #313639;
 
     --color-primary-dark: #fff;
     --color-secondary-dark: #dfdeff;
     --color-text-dark: var(--color-primary-light);
-    --color-disabled-dark: #d9d8d9;
+    --color-disabled-dark: #ededed;
     --color-disabled-text-dark: #4a4a4a;
 
     font-weight: 900;
@@ -129,6 +129,7 @@
   .button--light.button--secondary:disabled,
   .button--light.button--secondary:disabled:hover,
   .button--light.button--secondary:disabled:focus {
+    opacity: 0.8;
     border: 2px solid var(--color-disabled-light);
     color: var(--color-disabled-light);
   }

@@ -1,0 +1,83 @@
+.ProductPage {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 93vh;
+    top: 7vh;
+    display: none;
+    z-index: -1;
+    position: fixed;
+    background-color: white;
+    background-size: cover;
+    scroll-margin-top: 50vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    transition: 0.35s;
+
+    @media only screen and (min-height: 715px)  {
+        top: 50px;
+        height: calc(100% - 50px);
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .productDescription {
+        padding: 25vh 0px 0px 50px;
+        z-index: auto;
+        height: 100%;
+        width: 45%;
+        position: relative;
+        right: -55%;
+        word-wrap: break-word;
+        text-align: left;
+
+        h1 {
+            font-size: 2.5vw;
+        }
+        h2 {
+            font-size: 2vw;
+        }
+        p {
+            font-size: 1.6vw;
+            margin: 0;
+        }
+
+        @media only screen and (max-width: 950px) {
+            h1 {
+                font-size: 26px;
+            }
+            h2 {
+                font-size: 21px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+
+        @media only screen and (max-width: 700px)  {
+            padding: 0px 0px 0px 50px;
+            width: 100%;
+            height: 40%;
+            right: auto;
+            bottom: -52%;
+
+            h1 {
+                font-size: 22px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+}
