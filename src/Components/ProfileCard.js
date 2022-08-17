@@ -30,9 +30,7 @@ const ProjectCard = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="description">
-                <p>{props.description} </p>
-            </div>
+
         </Col>
 	);
 };

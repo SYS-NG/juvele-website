@@ -8,6 +8,7 @@ import Profiles from './Components/Profiles'
 import Cart from './Components/Cart'
 import ContactForm from './Components/ContactForm'
 import C3D from './Components/C3D'
+import About from './Components/About'
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -17,6 +18,7 @@ function App() {
       <NavBar showMenu={() => setShowMenu(!showMenu)} menu={showMenu} />
       <ContactForm/>
       <C3D/>
+      <About/>
       <header className="App-header" id="header">
         <Home/>
         <Contents/>

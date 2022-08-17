@@ -10,6 +10,11 @@
     transition: 0.35s;
     padding-top: 70px;
 
+    @media only screen and (min-height: 715px)  {
+        top: 50px;
+        height: calc(100% - 50px);
+    }
+
     p {
         font-size: 18px;
     }

@@ -1,4 +1,4 @@
-.ProductPage {
+.AboutPage {
     width: 100%;
     height: 93vh;
     top: 7vh;
@@ -10,8 +10,8 @@
     align-items: center;
     transition: 0.35s;
 
-    .ProductContent {
-        width: 40%;
+    .AboutContent {
+        width: calc(100% - 40px);
         height: calc(100% - 40px);
         background-color: white;
         border-radius: 8px;
