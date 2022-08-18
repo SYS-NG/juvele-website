@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar showMenu={() => setShowMenu(!showMenu)} menu={showMenu} />
+      <NavBar toggleMenu={() => setShowMenu(!showMenu)} showMenu={showMenu} />
       <ContactForm/>
       <C3D/>
       <header className="App-header" id="header">
