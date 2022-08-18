@@ -12,8 +12,6 @@ const closePages = () => {
 const openCart = () => {
     var cart = document.getElementById("cart");
     cart.style.width = "300px";
-    var header = document.getElementById("header");
-    header.style.marginRight = "300px";
     var product = document.getElementById("productPage");
     product.style.width = "calc(100% - 300px)"
     closePages();
@@ -23,8 +21,6 @@ const openCart = () => {
 const closeCart = () => {
     var cart = document.getElementById("cart");
     cart.style.width = "0px";
-    var header = document.getElementById("header");
-    header.style.marginRight = "0px";
     var product = document.getElementById("productPage");
     product.style.width = "100%"
 }
