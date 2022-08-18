@@ -29,17 +29,7 @@
         color: rgb(0, 0, 0);
         font-size: 2vw;
         font-weight: bold;
-
-        a {
-            border: 0.25vw solid black;
-            -webkit-text-stroke: 2px black;
-            font-size: 3vw;
-            font-weight: normal;
-            text-decoration: none;
-        }
-        a:hover {
-            font-weight: bold;
-        }
+        width: 42%;
     }
 
     Button {
@@ -48,14 +38,24 @@
 
     @media (max-width: 700px) {
         .description{
+            overflow-wrap: break-word;
             font-size: 16px;
-            a {
-                font-size:24px;
-            }
         }
         Button {
             padding: 10px 60px;
             font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .description{
+            margin-left: 30%;
+            font-size: 11.5px;
+            width:40%;
+        }
+        Button {
+            padding: 8px 20px;
+            font-size: 0.8rem;
         }
     }
 

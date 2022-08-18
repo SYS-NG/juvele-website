@@ -15,7 +15,6 @@ const openCart = () => {
     var product = document.getElementById("productPage");
     product.style.width = "calc(100% - 300px)"
     closePages();
-
 }
 
 const closeCart = () => {
@@ -90,7 +89,7 @@ const NavBar = (props) => {
                                 <a href="#home" target="_self" onClick={homeTrigger}>Home</a>
                             </div>
                             <div className="Tile">
-                                <a href="#C3D" target="_self" onClick={openC3D}>C3D</a>
+                                <a href="javascript:void(0);" target="_self" onClick={openC3D}>C3D</a>
                             </div>
                             <div className="Tile">
                                 <a href="javascript:void(0);" target="_self" onClick={openContactForm}>Contact</a>
@@ -102,7 +101,7 @@ const NavBar = (props) => {
                     </div>
 
                     <a href="#home" target="_self" onClick={homeTrigger}>Home</a>
-                    <a href="#C3D" target="_self" onClick={openC3D}>C3D</a>
+                    <a href="javascript:void(0);" target="_self" onClick={openC3D}>C3D</a>
                     <a href="javascript:void(0);" target="_self" onClick={openContactForm}>Contact</a>
                     <a href="javascript:void(0);" target="_self" onClick={toggleCart}>Cart (0)</a>
 
