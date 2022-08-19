@@ -20,7 +20,7 @@ export const mouseDescriptions = [
     'weight',
     'speed',
     'comfort',
-    'percision',
+    'precision',
     'quality'];
 
 export const contents = [
