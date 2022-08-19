@@ -19,11 +19,8 @@ const C3D = () => {
                         <a href="javascript:void(0);" target="_self" onClick={closeC3D}><IoCloseOutline size={45} color="black"/></a>
                 </div>
                 <h2>$129.99 CAD</h2>
-                <p>Ultra light at 4.7g</p>
-                <p>Powerful 11.6mm speaker driver</p>
-                <p>Sound by Teenage Engineering</p>
-                <p>Active Noise Cancellation</p>
-                <p>Up to 34 hours of listening</p>
+                <p>Our mouse measures in at 117x61x37 mm, making it small! The design is unique with a strong extrusion on the side to provide grip for a claw-style grip and a smooth hump for improved palm grip. Alongside the PMW 3389 sensor inside!! </p>
+           
                 <Button
                             size={ButtonSizes.LARGE}
                             label="SOLD OUT"
