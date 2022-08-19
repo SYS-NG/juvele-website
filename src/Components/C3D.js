@@ -1,7 +1,6 @@
 import React from "react";
 import "./C3D.scss";
 import { IoCloseOutline } from 'react-icons/io5';
-import { Row, Container } from 'react-bootstrap'
 import Button from "./Button"
 import { ButtonThemes, ButtonTypes, ButtonSizes } from "./buttonTypes";
 
@@ -20,7 +19,7 @@ const C3D = () => {
                 </div>
                 <h2>$129.99 CAD</h2>
                 <p>Our mouse measures in at 117x61x37 mm, making it small! The design is unique with a strong extrusion on the side to provide grip for a claw-style grip and a smooth hump for improved palm grip. Alongside the PMW 3389 sensor inside!! </p>
-           
+
                 <Button
                             size={ButtonSizes.LARGE}
                             label="SOLD OUT"
