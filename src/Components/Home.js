@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.scss";
-import MousePhoto from "./Images/C3D_render.JPG";
+import MousePhoto from "./Images/main.jpg";
 import Typed from "react-typed";
 import { mouseDescriptions } from "./Assets";
 import { Row, Container } from 'react-bootstrap'
