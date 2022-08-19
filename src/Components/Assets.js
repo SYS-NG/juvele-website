@@ -1,6 +1,5 @@
 import stevenHeadshot from "./Images/Steven_headshot.jpg"
 import adHeadshot     from "./Images/AD_headshot.jpg"
-import mouseRender    from "./Images/Mouse_render.JPG"
 import Comfort        from "./Images/Comfort.png"
 import Weight        from "./Images/Weight.png"
 import Speed        from "./Images/Speed.png"
@@ -24,7 +23,7 @@ export const mouseDescriptions = [
     'weight',
     'speed',
     'comfort',
-    'percision',
+    'precision',
     'quality'];
 
 export const contents = [
@@ -32,25 +31,16 @@ export const contents = [
         name: "Weight",
         image: Weight,
         description: "Low weight is a driving factor for building a mouse out of carbon fiber due to its material properties. We aim to reduce mouse fatigue-related injuries. We don't have an exact number for the carbon fiber C3D but we will soon!",
-        skills: ["Java", "Java Swing", "JUnit"],
-        github: "https://github.com/ScottJiang2001/CPSC-210-Project/tree/master/project_h8d3b",
-        devpost: false
     },
     {
         name: "Comfort",
         image: Comfort,
         description: "Comfort is important to allow for long-term usage. No mouse is perfect but with our design, we want to reduce potential health-related side effects from poorly designed office mice!",
-        skills: ["HTML", "CSS", "Javascript", "Firebase", "Python"],
-        github: "https://github.com/localproduce",
-        devpost: "https://devpost.com/software/localszn"
     },
     {
         name: "Speed",
         image: Speed,
         description: "Small size is essential for many gamers who want to push their aim to the limit! While for normal day-to-day usage the mouse is designed to be used by all hand sizes!",
-        skills: ["HTML", "CSS", "Javascript", "Vue"],
-        github: "https://github.com/BenjaminSao/DormBuddies",
-        devpost: "https://devpost.com/software/dormbuddy"
     },
 
 ]
@@ -65,7 +55,6 @@ export const profiles = [
         github: "https://github.com/advista216",
         email: "mailto: szeyungng@gmail.com",
         location: "Calgary, AB",
-        skills: ["Vue", "Javascript", "Jest", "HTML", "Sass", "Pug"],
         description: "Hi, my name is A.D. Mohammad (he/him) I am a third-year student currently studying Mechanical Engineering. My experience includes leadership and technical roles! From working on research for next-generation hydrogen energy solutions to being a part of the student-led Solar Car Team, alongside developing apps for students! My goal is to always try our best to innovate while preserving integrity and safety."
     },
     {
@@ -77,8 +66,6 @@ export const profiles = [
         github: "https://github.com/SYS-NG",
         email: "mailto: szeyungng@gmail.com",
         location: "Calgary, AB",
-        skills: ["React", "React Native", "Django", "Javascript", "Python"],
         description: "Hi, my name is Steven Ng (he/him) and I am a third-year student at the University of Calgary, working towards my degree in Electrical Engineering with a minor in Biomedical Engineering. I am passionate about electronics and have held various roles, like my software dev role at Tech Start and previous Embeded software internship at Ciena! I am currently interning at AMD as a SoC design Verification Engineer, and actively looking for my next challenge! My passion for learning pushed me towards the field of innovation and has led me to my pursuit of engineering. "
     },
-
 ]
