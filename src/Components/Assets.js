@@ -47,6 +47,17 @@ export const contents = [
 
 export const profiles = [
     {
+        photo: stevenHeadshot,
+        name: "Steven Ng",
+        position: "Co-Founder",
+        profession: "Electrical Engineer",
+        linkedIn: "https://www.linkedin.com/in/sysng/",
+        github: "https://github.com/SYS-NG",
+        email: "mailto: szeyungng@gmail.com",
+        location: "Calgary, AB",
+        description: "Hi, my name is Steven Ng (he/him) and I am a third-year student at the University of Calgary, working towards my degree in Electrical Engineering with a minor in Biomedical Engineering. I am passionate about electronics and have held various roles, like my software dev role at Tech Start and my previous Embedded Software Engineer internship at Ciena! I am currently interning at AMD as an SoC Design Verification Engineer, and actively looking for my next challenge! My passion for learning pushed me toward the field of innovation and has led me to my pursuit of engineering."
+    },
+    {
         photo: adHeadshot,
         name: "A.D. Mohammad",
         position: "Co-Founder",
@@ -56,16 +67,5 @@ export const profiles = [
         email: "mailto: szeyungng@gmail.com",
         location: "Calgary, AB",
         description: "Hi, my name is A.D. Mohammad (he/him) I am a third-year student currently studying Mechanical Engineering. My experience includes leadership and technical roles! From working on research for next-generation hydrogen energy solutions to being a part of the student-led Solar Car Team, alongside developing apps for students! My goal is to always try our best to innovate while preserving integrity and safety."
-    },
-    {
-        photo: stevenHeadshot,
-        name: "Steven Ng",
-        position: "Co-Founder",
-        profession: "Electrical Engineer",
-        linkedIn: "https://www.linkedin.com/in/sysng/",
-        github: "https://github.com/SYS-NG",
-        email: "mailto: szeyungng@gmail.com",
-        location: "Calgary, AB",
-        description: "Hi, my name is Steven Ng (he/him) and I am a third-year student at the University of Calgary, working towards my degree in Electrical Engineering with a minor in Biomedical Engineering. I am passionate about electronics and have held various roles, like my software dev role at Tech Start and previous Embeded software internship at Ciena! I am currently interning at AMD as a SoC design Verification Engineer, and actively looking for my next challenge! My passion for learning pushed me towards the field of innovation and has led me to my pursuit of engineering. "
     },
 ]
